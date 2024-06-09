@@ -1,7 +1,9 @@
-body {
-    font-family: monospace;
+html, body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+    font-family: monospace;
     background-color: #e0e0e0;
 }
 
@@ -13,15 +15,16 @@ header {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .intro {
-    padding: 20px;
+    padding: 10px;
     background: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -29,7 +32,7 @@ header {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 table img {
@@ -38,31 +41,31 @@ table img {
 }
 
 th, td {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     vertical-align: top;
 }
 
 th {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 td {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
     table img {
-        width: 100px;
+        width: 80px;
         height: auto;
     }
 
     th, td {
-        font-size: 14px;
-        padding: 5px;
+        font-size: 12px;
+        padding: 3px;
     }
 
     th {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
