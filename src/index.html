@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamhacks 8 Adobe add-on</title>
-    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Get started with Add-on development using JavaScript" />
+    <meta name="keywords" content="Adobe, Express, Add-On, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CultureStix</title>
+    <style>
+        .container {
+            margin: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            height: 100px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,129 +43,128 @@
         <section class="intro">
             <p>CultureStix brings a pixelated twist to the rich blend of Chinese culture through unique stickers.</p>
         </section>
-        <table>
-            <tr>
-                <td><img src="./images/Yin-Yang.PNG" alt="Yin-Yang" id="button0"></td>
-                <td><img src="./images/Yin-Yang (Flaming).PNG" alt="Yin-Yang Flaming" id="button1"></td>
-            </tr>
-            <tr>
-                <th>Yin-Yang (阴阳)</th>
-                <th>Yin-Yang (阴阳) (Flaming)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Koi Fish (Navy).PNG" alt="Koi Fish Navy" id="button2"></td>
-                <td><img src="./images/Koi Fish (Red).PNG" alt="Koi Fish Red" id="button3"></td>
-            </tr>
-            <tr>
-                <th>Koi Fish (锦鲤) (Navy)</th>
-                <th>Koi Fish (锦鲤) (Red)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Moon.PNG" alt="Moon" id="button4"></td>
-                <td><img src="./images/Moon Bunny.PNG" alt="Moon Bunny" id="button5"></td>
-            </tr>
-            <tr>
-                <th>Moon (月亮)</th>
-                <th>Moon Rabbit (月兔)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Yuanbao (1).PNG" alt="Yuanbao" id="button6"></td>
-                <td><img src="./images/Yuanbao (2).PNG" alt="Yuanbao" id="button7"></td>
-            </tr>
-            <tr>
-                <th>Yuanbao (元宝)</th>
-                <th>Yuanbao (元宝) (2)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Lantern.PNG" alt="Red Lantern" id="button8"></td>
-                <td><img src="./images/Lucky Cat.PNG" alt="Lucky Cat" id="button9"></td>
-            </tr>
-            <tr>
-                <th>Red Lantern (灯笼)</th>
-                <th>Lucky Cat (招财猫)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Gourd.PNG" alt="Hulu" id="button10"></td>
-                <td><img src="./images/Fan.PNG" alt="Fan" id="button11"></td>
-            </tr>
-            <tr>
-                <th>Hulu (葫芦)</th>
-                <th>Fan (扇子)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Baozi.PNG" alt="Baozi" id="button12"></td>
-                <td><img src="./images/Peach.PNG" alt="Peach" id="button13"></td>
-            </tr>
-            <tr>
-                <th>Baozi (包子)</th>
-                <th>Peach (桃子)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/White Rabbit Candy.PNG" alt="White Rabbit Candy" id="button14"></td>
-                <td><img src="./images/Soy Sauce.PNG" alt="Soy Sauce" id="button15"></td>
-            </tr>
-            <tr>
-                <th>White Rabbit Candy (大白兔奶糖)</th>
-                <th>Soy Sauce (酱油)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Teapot (Curly Handle).PNG" alt="Teapot Fancy" id="button16"></td>
-                <td><img src="./images/Teapot (Thick Handle).PNG" alt="Teapot 1" id="button17"></td>
-            </tr>
-            <tr>
-                <th>Teapot (茶壶) (Fancy)</th>
-                <th>Teapot (茶壶) (1)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Teapot (Thin Handle).PNG" alt="Teapot 2" id="button18"></td>
-                <td><img src="./images/Tea.PNG" alt="Teacup" id="button19"></td>
-            </tr>
-            <tr>
-                <th>Teapot (茶壶) (2)</th>
-                <th>Teacup (茶杯)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Fu (Red).PNG" alt="Fu Character Red" id="button20"></td>
-                <td><img src="./images/Fu (Gold).PNG" alt="Fu Character Gold" id="button21"></td>
-            </tr>
-            <tr>
-                <th>"福" Character (Red)</th>
-                <th>"福" Character (Gold)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Tian (Blue).PNG" alt="Tian Character Blue" id="button22"></td>
-                <td><img src="./images/Tian (Gold).PNG" alt="Tian Character Gold" id="button23"></td>
-            </tr>
-            <tr>
-                <th>"天" Character (Blue)</th>
-                <th>"天" Character (Gold)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Xin (Red).PNG" alt="Xin Character Red" id="button24"></td>
-                <td><img src="./images/Xin (Gold).PNG" alt="Xin Character Gold" id="button25"></td>
-            </tr>
-            <tr>
-                <th>"心" Character (Red)</th>
-                <th>"心" Character (Gold)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/You (Blue).PNG" alt="You Character Blue" id="button26"></td>
-                <td><img src="./images/You (Gold).PNG" alt="You Character Gold" id="button27"></td>
-            </tr>
-            <tr>
-                <th>"友" Character (Blue)</th>
-                <th>"友" Character (Gold)</th>
-            </tr>
-            <tr>
-                <td><img src="./images/Gold Frame.PNG" alt="Gold Frame" id="button28"></td>
-                <td><img src="./images/Thin Gold Border.png" alt="Thin Gold Border" id="button29"></td>
-            </tr>
-            <tr>
-                <th>Gold Border (金色相框) (1)</th>
-                <th>Gold Border (金色相框) (2)</th>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div id="image0" class="image" style="background-image:url(./images/Yin-Yang.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image1" class="image" style="background-image:url(./images/Yin-Yang (Flaming).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image2" class="image" style="background-image:url(./images/Koi Fish (Navy).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image3" class="image" style="background-image:url(./images/Koi Fish (Red).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image4" class="image" style="background-image:url(./images/Moon.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image5" class="image" style="background-image:url(./images/Moon Bunny.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image6" class="image" style="background-image:url(./images/Yuanbao (1).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image7" class="image" style="background-image:url(./images/Yuanbao (2).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image8" class="image" style="background-image:url(./images/Lantern.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image9" class="image" style="background-image:url(./images/Lucky Cat.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image10" class="image" style="background-image:url(./images/Gourd.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image11" class="image" style="background-image:url(./images/Fan.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image12" class="image" style="background-image:url(./images/Baozi.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image13" class="image" style="background-image:url(./images/Peach.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image14" class="image" style="background-image:url(./images/White Rabbit Candy.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image15" class="image" style="background-image:url(./images/Soy Sauce.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image16" class="image" style="background-image:url(./images/Teapot (Curly Handle).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image17" class="image" style="background-image:url(./images/Teapot (Thick Handle).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image18" class="image" style="background-image:url(./images/Teapot (Thin Handle).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image19" class="image" style="background-image:url(./images/Tea.PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image20" class="image" style="background-image:url(./images/Fu (Red).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image21" class="image" style="background-image:url(./images/Fu (Gold).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image22" class="image" style="background-image:url(./images/Tian (Blue).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image23" class="image" style="background-image:url(./images/Tian (Gold).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image24" class="image" style="background-image:url(./images/Xin (Red).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image25" class="image" style="background-image:url(./images/Xin (Gold).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image26" class="image" style="background-image:url(./images/You (Blue).PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image27" class="image" style="background-image:url(./images/You (Gold).PNG);"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="image28" class="image" style="background-image:url(./images/Gold Frame.PNG);"></div>
+            </div>
+            <div class="column">
+                <div id="image29" class="image" style="background-image:url(./images/Thin Gold Border.png);"></div>
+            </div>
+        </div>
     </div>
-    <script src="index.js"></script>
 </body>
+
 </html>
