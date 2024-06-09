@@ -1,208 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamhacks 8 Adobe add-on</title>
-    <style>
-        body {
-            font-family: monospace;
-            margin: 0;
-            padding: 0;
-            background-color: #e0e0e0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .intro {
-            padding: 10px;
-            background: #fff;
-            margin-top: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-        }
-
-        table img {
-            width: 100%;
-            height: auto;
-        }
-
-        th, td {
-            padding: 5px;
-            text-align: center;
-            vertical-align: top;
-        }
-
-        th {
-            font-size: 18px;
-        }
-
-        td {
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            table img {
-                width: 80px;
-                height: auto;
-            }
-
-            th, td {
-                font-size: 12px;
-                padding: 3px;
-            }
-
-            th {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <h1>CultureStix</h1>
     </header>
-
     <div class="container">
         <section class="intro">
             <p>CultureStix brings a pixelated twist to the rich blend of Chinese culture through unique stickers.</p>
         </section>
-
         <table>
             <tr>
-                <td><img src="Yin-Yang.PNG" alt="Yin-Yang"></td>
-                <td><img src="Yin-Yang (Flaming).PNG" alt="Yin-Yang Flaming"></td>
+                <td><img src="./images/Yin-Yang.PNG" alt="Yin-Yang" id="button0"></td>
+                <td><img src="./images/Yin-Yang (Flaming).PNG" alt="Yin-Yang Flaming" id="button1"></td>
             </tr>
             <tr>
                 <th>Yin-Yang (阴阳)</th>
                 <th>Yin-Yang (阴阳) (Flaming)</th>
             </tr>
             <tr>
-                <td><img src="Koi Fish (Navy).PNG" alt="Koi Fish Navy"></td>
-                <td><img src="Koi Fish (Red).PNG" alt="Koi Fish Red"></td>
+                <td><img src="./images/Koi Fish (Navy).PNG" alt="Koi Fish Navy" id="button2"></td>
+                <td><img src="./images/Koi Fish (Red).PNG" alt="Koi Fish Red" id="button3"></td>
             </tr>
             <tr>
                 <th>Koi Fish (锦鲤) (Navy)</th>
                 <th>Koi Fish (锦鲤) (Red)</th>
             </tr>
             <tr>
-                <td><img src="Moon.PNG" alt="Moon"></td>
-                <td><img src="Moon Bunny.PNG" alt="Moon Bunny"></td>
+                <td><img src="./images/Moon.PNG" alt="Moon" id="button4"></td>
+                <td><img src="./images/Moon Bunny.PNG" alt="Moon Bunny" id="button5"></td>
             </tr>
             <tr>
                 <th>Moon (月亮)</th>
                 <th>Moon Rabbit (月兔)</th>
             </tr>
             <tr>
-                <td><img src="Yuanbao (1).PNG" alt="Yuanbao"></td>
-                <td><img src="Yuanbao (2).PNG" alt="Yuanbao"></td>
+                <td><img src="./images/Yuanbao (1).PNG" alt="Yuanbao" id="button6"></td>
+                <td><img src="./images/Yuanbao (2).PNG" alt="Yuanbao" id="button7"></td>
             </tr>
             <tr>
                 <th>Yuanbao (元宝)</th>
                 <th>Yuanbao (元宝) (2)</th>
             </tr>
             <tr>
-                <td><img src="Lantern.PNG" alt="Red Lantern"></td>
-                <td><img src="Lucky Cat.PNG" alt="Lucky Cat"></td>
+                <td><img src="./images/Lantern.PNG" alt="Red Lantern" id="button8"></td>
+                <td><img src="./images/Lucky Cat.PNG" alt="Lucky Cat" id="button9"></td>
             </tr>
             <tr>
                 <th>Red Lantern (灯笼)</th>
                 <th>Lucky Cat (招财猫)</th>
             </tr>
             <tr>
-                <td><img src="Gourd.PNG" alt="Hulu"></td>
-                <td><img src="Fan.PNG" alt="Fan"></td>
+                <td><img src="./images/Gourd.PNG" alt="Hulu" id="button10"></td>
+                <td><img src="./images/Fan.PNG" alt="Fan" id="button11"></td>
             </tr>
             <tr>
                 <th>Hulu (葫芦)</th>
                 <th>Fan (扇子)</th>
             </tr>
             <tr>
-                <td><img src="Baozi.PNG" alt="Baozi"></td>
-                <td><img src="Peach.PNG" alt="Peach"></td>
+                <td><img src="./images/Baozi.PNG" alt="Baozi" id="button12"></td>
+                <td><img src="./images/Peach.PNG" alt="Peach" id="button13"></td>
             </tr>
             <tr>
                 <th>Baozi (包子)</th>
                 <th>Peach (桃子)</th>
             </tr>
             <tr>
-                <td><img src="White Rabbit Candy.PNG" alt="White Rabbit Candy"></td>
-                <td><img src="Soy Sauce.PNG" alt="Soy Sauce"></td>
+                <td><img src="./images/White Rabbit Candy.PNG" alt="White Rabbit Candy" id="button14"></td>
+                <td><img src="./images/Soy Sauce.PNG" alt="Soy Sauce" id="button15"></td>
             </tr>
             <tr>
                 <th>White Rabbit Candy (大白兔奶糖)</th>
                 <th>Soy Sauce (酱油)</th>
             </tr>
             <tr>
-                <td><img src="Teapot (Curly Handle).PNG" alt="Teapot Fancy"></td>
-                <td><img src="Teapot (Thick Handle).PNG" alt="Teapot 1"></td>
+                <td><img src="./images/Teapot (Curly Handle).PNG" alt="Teapot Fancy" id="button16"></td>
+                <td><img src="./images/Teapot (Thick Handle).PNG" alt="Teapot 1" id="button17"></td>
             </tr>
             <tr>
                 <th>Teapot (茶壶) (Fancy)</th>
                 <th>Teapot (茶壶) (1)</th>
             </tr>
             <tr>
-                <td><img src="Teapot (Thin Handle).PNG" alt="Teapot 2"></td>
-                <td><img src="Tea.PNG" alt="Teacup"></td>
+                <td><img src="./images/Teapot (Thin Handle).PNG" alt="Teapot 2" id="button18"></td>
+                <td><img src="./images/Tea.PNG" alt="Teacup" id="button19"></td>
             </tr>
             <tr>
                 <th>Teapot (茶壶) (2)</th>
                 <th>Teacup (茶杯)</th>
             </tr>
             <tr>
-                <td><img src="Fu (Red).PNG" alt="Fu Character Red"></td>
-                <td><img src="Fu (Gold).PNG" alt="Fu Character Gold"></td>
+                <td><img src="./images/Fu (Red).PNG" alt="Fu Character Red" id="button20"></td>
+                <td><img src="./images/Fu (Gold).PNG" alt="Fu Character Gold" id="button21"></td>
             </tr>
             <tr>
                 <th>"福" Character (Red)</th>
                 <th>"福" Character (Gold)</th>
             </tr>
             <tr>
-                <td><img src="Tian (Blue).PNG" alt="Tian Character Blue"></td>
-                <td><img src="Tian (Gold).PNG" alt="Tian Character Gold"></td>
+                <td><img src="./images/Tian (Blue).PNG" alt="Tian Character Blue" id="button22"></td>
+                <td><img src="./images/Tian (Gold).PNG" alt="Tian Character Gold" id="button23"></td>
             </tr>
             <tr>
                 <th>"天" Character (Blue)</th>
                 <th>"天" Character (Gold)</th>
             </tr>
             <tr>
-                <td><img src="Xin (Red).PNG" alt="Xin Character Red"></td>
-                <td><img src="Xin (Gold).PNG" alt="Xin Character Gold"></td>
+                <td><img src="./images/Xin (Red).PNG" alt="Xin Character Red" id="button24"></td>
+                <td><img src="./images/Xin (Gold).PNG" alt="Xin Character Gold" id="button25"></td>
             </tr>
             <tr>
                 <th>"心" Character (Red)</th>
                 <th>"心" Character (Gold)</th>
             </tr>
             <tr>
-                <td><img src="You (Blue).PNG" alt="You Character Blue"></td>
-                <td><img src="You (Gold).PNG" alt="You Character Gold"></td>
+                <td><img src="./images/You (Blue).PNG" alt="You Character Blue" id="button26"></td>
+                <td><img src="./images/You (Gold).PNG" alt="You Character Gold" id="button27"></td>
             </tr>
             <tr>
                 <th>"友" Character (Blue)</th>
                 <th>"友" Character (Gold)</th>
             </tr>
             <tr>
-                <td><img src="Gold Frame.PNG" alt="Gold Frame"></td>
-                <td><img src="Thin Gold Border.png" alt="Thin Gold Border"></td>
+                <td><img src="./images/Gold Frame.PNG" alt="Gold Frame" id="button28"></td>
+                <td><img src="./images/Thin Gold Border.png" alt="Thin Gold Border" id="button29"></td>
             </tr>
             <tr>
                 <th>Gold Border (金色相框) (1)</th>
@@ -211,5 +138,4 @@
         </table>
     </div>
 </body>
-
 </html>
