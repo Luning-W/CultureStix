@@ -1,2 +1,2 @@
 # CultureStix
-Jamhacks 8 
+Jamhacks 8 Submission
