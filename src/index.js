@@ -26,7 +26,7 @@ addOnUISdk.ready.then(() => {
         })  
     });
     document.getElementById("button3").addEventListener("click",async function() {
-        let path = "./images/Fu(Red).PNG";
+        let path = "./images/FuRed.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
