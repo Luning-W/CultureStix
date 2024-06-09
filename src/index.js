@@ -17,7 +17,8 @@ addOnUISdk.ready.then(() => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
-    });document.getElementById("button2").addEventListener("click",async function() {
+    });
+    document.getElementById("button2").addEventListener("click",async function() {
         let path = "./images/Fu (Gold).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
@@ -53,154 +54,175 @@ addOnUISdk.ready.then(() => {
         })  
     });
     document.getElementById("button7").addEventListener("click",async function() {
-        let path = "./images/Lantern.PNG";
+        let path = "./images/Koi Fish (Red).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button8").addEventListener("click",async function() {
-        let path = "./images/Lucky Cat.PNG";
+        let path = "./images/Lantern.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button9").addEventListener("click",async function() {
-        let path = "./images/Mask.PNG";
+        let path = "./images/Lucky Cat.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button10").addEventListener("click",async function() {
-        let path = "./images/Moon Bunny.PNG";
+        let path = "./images/Mask.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button11").addEventListener("click",async function() {
-        let path = "./images/Moon.PNG";
+        let path = "./images/Moon Bunny.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button12").addEventListener("click",async function() {
-        let path = "./images/Peach.PNG";
+        let path = "./images/Moon.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button13").addEventListener("click",async function() {
-        let path = "./images/Soy Sauce.PNG";
+        let path = "./images/Peach.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button14").addEventListener("click",async function() {
-        let path = "./images/Teapot (Curly Handle).PNG";
+        let path = "./images/Soy Sauce.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button15").addEventListener("click",async function() {
-        let path = "./images/Teapot (Thick Handle).PNG";
+        let path = "./images/Tea.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button16").addEventListener("click",async function() {
-        let path = "./images/Teapot (Thin Handle).PNG";
+        let path = "./images/Teapot (Curly Handle).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button17").addEventListener("click",async function() {
-        let path = "./images/Thin Gold Border.png";
+        let path = "./images/Teapot (Thick Handle).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button18").addEventListener("click",async function() {
-        let path = "./images/Tian (Blue).PNG";
+        let path = "./images/Teapot (Thin Handle).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button19").addEventListener("click",async function() {
-        let path = "./images/Tian (Gold).PNG";
+        let path = "./images/Thin Gold Border.png";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button20").addEventListener("click",async function() {
-        let path = "./images/White Rabbit Candy.PNG";
+        let path = "./images/Tian (Blue).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button21").addEventListener("click",async function() {
-        let path = "./images/Xin (Gold).PNG";
+        let path = "./images/Tian (Gold).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button22").addEventListener("click",async function() {
-        let path = "./images/Xin (Red).PNG";
+        let path = "./images/White Rabbit Candy.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button23").addEventListener("click",async function() {
-        let path = "./images/Yin-Yang (Flaming).PNG";
+        let path = "./images/Xin (Gold).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button24").addEventListener("click",async function() {
-        let path = "./images/Yin-Yang.PNG";
+        let path = "./images/Xin (Red).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button25").addEventListener("click",async function() {
-        let path = "./images/You (Blue).PNG";
+        let path = "./images/Yin-Yang (Flaming).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button26").addEventListener("click",async function() {
-        let path = "./images/You (Gold).PNG";
+        let path = "./images/Yin-Yang.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button27").addEventListener("click",async function() {
-        let path = "./images/Yuanbao (1).PNG";
+        let path = "./images/You (Blue).PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button28").addEventListener("click",async function() {
+        let path = "./images/You (Gold).PNG";
+        fetch(path).then(response => response.blob()).then(blob  => {
+            addOnUISdk.app.document.addImage(blob);
+            console.log("hi");
+        })  
+    });
+    document.getElementById("button29").addEventListener("click",async function() {
+        let path = "./images/Yuanbao (1).PNG";
+        fetch(path).then(response => response.blob()).then(blob => {
+            addOnUISdk.app.document.addImage(blob);
+            console.log("hi");
+        })  
+    });
+    document.getElementById("button30").addEventListener("click",async function() {
         let path = "./images/Yuanbao (2).PNG";
+        fetch(path).then(response => response.blob()).then(blob => {
+            addOnUISdk.app.document.addImage(blob);
+            console.log("hi");
+        })  
+    });
+    document.getElementById("button31").addEventListener("click",async function() {
+        let path = "./images/Thin Gold Border.png";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
