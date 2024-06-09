@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="index.js">
+    </script>
     <meta charset="UTF-8" />
     <meta name="description" content="Get started with Add-on development using JavaScript" />
     <meta name="keywords" content="Adobe, Express, Add-On, JavaScript" />
@@ -26,145 +27,250 @@
             flex-direction: column;
         }
 
-        .image {
-            height: 100px;
-            width: 100px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            cursor: pointer;
+        button {
+            background-color: rgb(255, 230, 238);
+            border-color: rgb(82, 88, 228);
+            border-radius: 16px;
+            border-style: solid;
+            color: rgb(255, 255, 255);
+            font-family: calluna;
+            height: 32px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>CultureStix</h1>
-    </header>
+    <!-- 
+            Please note that this document does not use the spectrum web components theme for Express.
+            You may use "addOnUISdk.app.ui.theme" to get the current theme and style accordingly.
+        -->
     <div class="container">
-        <section class="intro">
-            <p>CultureStix brings a pixelated twist to the rich blend of Chinese culture through unique stickers.</p>
-        </section>
-    <div class="container">
+
         <div class="row">
             <div class="column">
-                <div id="image0" class="image" style="background-image:url(./images/Yin-Yang.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Baozi.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <script src="index.js"></script>
+                <button id="button0">Add</button>
+                
+
             </div>
             <div class="column">
-                <div id="image1" class="image" style="background-image:url(./images/Yin-Yang (Flaming).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Fan.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button1">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image2" class="image" style="background-image:url(./images/Koi Fish (Navy).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Fu (Gold).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button2">Add</button>
             </div>
             <div class="column">
-                <div id="image3" class="image" style="background-image:url(./images/Koi Fish (Red).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Fu (Red).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button3">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image4" class="image" style="background-image:url(./images/Moon.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Gold Frame.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button4">Add</button>
             </div>
             <div class="column">
-                <div id="image5" class="image" style="background-image:url(./images/Moon Bunny.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Gourd.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button5">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image6" class="image" style="background-image:url(./images/Yuanbao (1).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Koi Fish (Navy).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button6">Add</button>
             </div>
             <div class="column">
-                <div id="image7" class="image" style="background-image:url(./images/Yuanbao (2).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Koi Fish (Red).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button7">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image8" class="image" style="background-image:url(./images/Lantern.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Lantern.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button8">Add</button>
             </div>
             <div class="column">
-                <div id="image9" class="image" style="background-image:url(./images/Lucky Cat.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Lucky Cat.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button9">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image10" class="image" style="background-image:url(./images/Gourd.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Mask.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button10">Add</button>
             </div>
             <div class="column">
-                <div id="image11" class="image" style="background-image:url(./images/Fan.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Moon Bunny.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button11">Add</button>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image12" class="image" style="background-image:url(./images/Baozi.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Moon.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button12">Add</button>
             </div>
             <div class="column">
-                <div id="image13" class="image" style="background-image:url(./images/Peach.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Peach.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button13">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image14" class="image" style="background-image:url(./images/White Rabbit Candy.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Soy Sauce.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button14">Add</button>
             </div>
             <div class="column">
-                <div id="image15" class="image" style="background-image:url(./images/Soy Sauce.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Teapot (Curly Handle).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button15">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image16" class="image" style="background-image:url(./images/Teapot (Curly Handle).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Teapot (Thick Handle).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button16">Add</button>
             </div>
             <div class="column">
-                <div id="image17" class="image" style="background-image:url(./images/Teapot (Thick Handle).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Teapot (Thin Handle).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button17">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image18" class="image" style="background-image:url(./images/Teapot (Thin Handle).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Thin Gold Border.png);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button18">Add</button>
             </div>
             <div class="column">
-                <div id="image19" class="image" style="background-image:url(./images/Tea.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Tian (Blue).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button19">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image20" class="image" style="background-image:url(./images/Fu (Red).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Tian (Gold).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button20">Add</button>
             </div>
             <div class="column">
-                <div id="image21" class="image" style="background-image:url(./images/Fu (Gold).PNG);"></div>
+                <div
+                    style="background-image:url(./images/White Rabbit Candy.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button21">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image22" class="image" style="background-image:url(./images/Tian (Blue).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Xin (Gold).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button22">Add</button>
             </div>
             <div class="column">
-                <div id="image23" class="image" style="background-image:url(./images/Tian (Gold).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Xin (Red).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button23">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image24" class="image" style="background-image:url(./images/Xin (Red).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Yin-Yang (Flaming).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button24">Add</button>
             </div>
             <div class="column">
-                <div id="image25" class="image" style="background-image:url(./images/Xin (Gold).PNG);"></div>
+                <div
+                    style="background-image:url(./images/Yin-Yang.PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button25">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image26" class="image" style="background-image:url(./images/You (Blue).PNG);"></div>
+                <div
+                    style="background-image:url(./images/You (Blue).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button26">Add</button>
             </div>
             <div class="column">
-                <div id="image27" class="image" style="background-image:url(./images/You (Gold).PNG);"></div>
+                <div
+                    style="background-image:url(./images/You (Gold).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button27">Add</button>
+                <script src="index.js"></script>
             </div>
         </div>
         <div class="row">
             <div class="column">
-                <div id="image28" class="image" style="background-image:url(./images/Gold Frame.PNG);"></div>
+                <div
+                    style="background-image:url(./images/Yuanbao (1).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button28">Add</button>
             </div>
             <div class="column">
-                <div id="image29" class="image" style="background-image:url(./images/Thin Gold Border.png);"></div>
+                <div
+                    style="background-image:url(./images/Yuanbao (2).PNG);height:100px;width:100px;background-size: contain;background-repeat: no-repeat;">
+                </div>
+                <button id="button32">Add</button>
             </div>
         </div>
+        
+           
     </div>
+    
 </body>
 
 </html>
