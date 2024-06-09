@@ -117,14 +117,14 @@ addOnUISdk.ready.then(() => {
         })  
     });
     document.getElementById("button16").addEventListener("click",async function() {
-        let path = "./images/TeapotCurly Handle.PNG";
+        let path = "./images/TeapotCurlyHandle.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
         })  
     });
     document.getElementById("button17").addEventListener("click",async function() {
-        let path = "./images/TeapotThick Handle.PNG";
+        let path = "./images/TeapotThickHandle.PNG";
         fetch(path).then(response => response.blob()).then(blob => {
             addOnUISdk.app.document.addImage(blob);
             console.log("hi");
