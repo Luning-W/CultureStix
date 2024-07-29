@@ -1,2 +1,2 @@
 # CultureStix
-Jamhacks 8 Submission, an Adobe Express Add-on
+Jamhacks 8 Submission, Adobe Express Add-On
